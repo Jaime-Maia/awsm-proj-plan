@@ -1,54 +1,54 @@
 # awsm-proj-plan
 
-Skill para o Claude planejar projetos com várias entregas ou uma rotina de gestão, do esclarecimento do escopo até a documentação.
+A skill for Claude to plan projects with multiple deliverables or a personal routine, from clarifying scope to structuring documentation.
 
-## O que ela faz
+## What it does
 
-1. Identifica o tipo do projeto: software/ferramenta, conteúdo/série, biblioteca de design, pesquisa/aprendizado, pessoal/rotina ou outro.
-2. Antes de planejar, lista caminhos possíveis para o resultado e depois faz perguntas guiadas, em rodadas curtas, para escolher entre eles e confirmar objetivo, limites, entregas, suposições e riscos.
-3. Escreve o escopo e quebra cada entrega em tarefas verificáveis, com no máximo 10 tarefas por plano.
-4. Sugere skills e connectors para cada etapa, conferindo o que está realmente disponível na sessão.
-5. Verifica a documentação existente antes de criar algo novo e organiza tudo em um único local.
-6. Só altera arquivos existentes depois da sua aprovação.
+1. Identifies the project type: software/tool, content/series, design library, research/learning, personal/routine, or other.
+2. Before planning, lists possible paths to the result, then asks guided questions in short rounds to choose among them and confirm goal, limits, deliverables, assumptions, and risks.
+3. Writes the scope and breaks each deliverable into verifiable tasks, with at most 10 tasks per plan.
+4. Suggests skills and connectors for each stage, checking what is actually available in the session.
+5. Checks existing documentation before creating anything new, and keeps everything in a single place.
+6. Changes existing files only after your approval.
 
-Não depende de outras skills para funcionar. O questionamento é feito pela própria skill.
+It does not depend on other skills. The questioning is handled by the skill itself.
 
-## Instalação
+## Installation
 
-**Opção 1: copiar a pasta**
+**Option 1: copy the folder**
 
-Copie a pasta `awsm-proj-plan` para o diretório de skills do Claude Code:
+Copy the `awsm-proj-plan` folder to the Claude Code skills directory:
 
 ```
 ~/.claude/skills/awsm-proj-plan/
 ```
 
-Depois, reinicie a sessão para a skill ser carregada.
+Then restart the session so the skill is loaded.
 
-**Opção 2: enviar pela interface**
+**Option 2: upload through the interface**
 
-Envie a pasta (ou um zip dela) pela tela de skills do Claude, como uma skill personalizada.
+Upload the folder (or a zip of it) through the Claude skills screen, as a custom skill.
 
-## Uso
+## Usage
 
-Peça um planejamento de projeto com várias entregas ou de uma rotina, por exemplo:
+Ask for a plan for a project with multiple deliverables or for a routine, for example:
 
-> Quero planejar a produção de uma série de quadrinhos com 6 capítulos.
+> I want to plan the production of a comic series with 6 chapters.
 
-ou
+or
 
-> Preciso organizar minha rotina de estudos e trabalho para o próximo trimestre.
+> I need to organize my study and work routine for the next quarter.
 
-A skill também é acionada pelos gatilhos em português e em inglês definidos na descrição.
+The skill is also triggered by the Portuguese and English phrases defined in its description.
 
-## Skills relacionadas (opcionais)
+## Related skills (optional)
 
-- **versionamento-vx-x-x**: usada pelo tipo software/ferramenta para numerar as versões em vX.X.X. Se não estiver instalada, a skill segue sem ela.
+- **versionamento-vx-x-x**: used by the software/tool type to number versions as vX.X.X. If it is not installed, the skill works without it.
 
-## Idioma
+## Language
 
-A skill responde no mesmo idioma dos últimos chats do usuário. Se o uso estiver equilibrado (até 60/40 entre dois idiomas), ela pergunta qual idioma prefere antes de responder.
+The skill replies in the same language as the user's most recent chats. If usage is balanced (up to 60/40 between two languages), it asks which language the user prefers before replying.
 
-## Licença
+## License
 
-Defina a licença antes de publicar.
+Define the license before publishing.
