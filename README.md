@@ -51,4 +51,4 @@ The skill replies in the same language as the user's most recent chats. If usage
 
 ## License
 
-Define the license before publishing.
+MIT License. See LICENSE.
